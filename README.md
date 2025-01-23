@@ -1,29 +1,98 @@
-# Create T3 App
+![ai-email-client](https://socialify.git.ci/awindsr/ai-email-client/image?font=Raleway&forks=1&issues=1&language=1&name=1&owner=1&pattern=Formal+Invitation&pulls=1&stargazers=1&theme=Light)
+# **Minimalistic AI-Powered SaaS Email Client**  
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+### **Overview**  
+This project is a lightweight, intuitive SaaS email client designed for professionals to manage their emails efficiently. By leveraging AI capabilities, it offers features such as context-aware replies, intelligent inbox management, and automated email drafting and sending.  
 
-## What's next? How do I make an app with this?
+Built with **Next.js**, **Tailwind CSS**, **OpenAI**, and other cutting-edge technologies, this project addresses the need for enhanced productivity and seamless communication.  
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+---
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+### **Key Features**  
+- **AI Integration**: Automates email creation, context-aware replies, and intelligent email organization.  
+- **Full-Text Search**: Powered by Orama, enabling quick and accurate email retrieval.  
+- **Smart Agent**: Execute commands like “Send a mail to this person explaining about this” to save time and effort.  
+- **Keyboard Navigation**: Streamlined controls for power users.  
+- **Dark/Light Mode**: Customizable UI for better user experience.  
+- **Secure Payment System**: Subscription management with Stripe.  
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+---
 
-## Learn More
+### **Technologies Used**  
+- **Frontend**: [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/)  
+- **Backend**: [Prisma](https://www.prisma.io/), [OpenAI](https://platform.openai.com/)  
+- **Database**: PostgreSQL (or your preferred choice)  
+- **Search**: [Orama](https://orama.dev/)  
+- **Email Synchronization**: [Oringo APIs](https://www.oringoapi.com/)  
+- **Payment Processing**: [Stripe](https://stripe.com/)  
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+---
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+### **Project Objectives**  
+- Develop a minimalistic email client with a focus on usability and efficiency.  
+- Leverage AI to automate repetitive email tasks, saving users time.  
+- Provide advanced features like full-text search and context-aware replies.  
+- Ensure secure, scalable, and cost-effective operations with SaaS architecture.  
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+---
 
-## How do I deploy this?
+### **Installation and Setup**  
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+1. **Clone the Repository**  
+   ```bash  
+   git clone https://github.com/username/project-name.git  
+   cd project-name  
+   ```  
+
+2. **Install Dependencies**  
+   ```bash  
+   npm install  
+   ```  
+
+3. **Set Up Environment Variables**  
+   Create a `.env` file in the root directory and add the following:  
+   ```env  
+   DATABASE_URL=your_database_url  
+   OPENAI_API_KEY=your_openai_api_key  
+   STRIPE_SECRET_KEY=your_stripe_secret_key  
+   ORINGO_API_KEY=your_oringo_api_key  
+   ```  
+
+4. **Run Migrations**  
+   ```bash  
+   npx prisma migrate dev  
+   ```  
+
+5. **Start the Development Server**  
+   ```bash  
+   npm run dev  
+   ```  
+   Open [http://localhost:3000](http://localhost:3000) in your browser.  
+
+---
+
+### **Usage**  
+
+1. **AI-Powered Email Drafting**  
+   - Enter a command like "Send an email to [Person] about [Topic]."  
+   - The AI agent will draft and send the email.  
+
+2. **Smart Inbox**  
+   - Emails are categorized intelligently to enhance organization.  
+
+3. **Search Emails**  
+   - Use the full-text search bar to find emails instantly.  
+
+4. **Dark/Light Mode**  
+   - Toggle between modes to suit your preference.  
+
+---
+
+
+
+### **Contributing**  
+Contributions are welcome! Please follow these steps:  
+1. Fork the repository.  
+2. Create a feature branch.  
+3. Commit your changes.  
+4. Open a pull request.  
