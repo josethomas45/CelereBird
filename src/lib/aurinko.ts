@@ -4,7 +4,7 @@ import { auth } from "@clerk/nextjs/server";
 import axios from "axios";
 
 export const getAurinkoAuthUrl = async (
-  serviceType: "Google" | "Office365",
+  serviceType: "Google" | "Office365" | "IMAP",
 ) => {
   const { userId } = await auth();
 
@@ -13,7 +13,9 @@ export const getAurinkoAuthUrl = async (
   const params = new URLSearchParams({
     clientId: process.env.AURINKO_CLIENT_ID as string,
     serviceType,
-    scope: "Mail.ReadWrite Mail.Read Mail.All Mail.Send Mail.Drafts",
+    scope: 'Mail.Read Mail.ReadWrite Mail.Send Mail.Drafts Mail.All',
+    // scope: "Mail.Read",
+
     responseType: "code",
     returnUrl: `${process.env.NEXT_PUBLIC_URL}/api/aurinko/callback`,
   });
